@@ -4,7 +4,11 @@ const operation = (numero1,numero2,op)=>{
         op(numero1,numero2)
     },2500)
 }
+const opTest = (a,b)=>{
+    console.log (a*b)
+}
+//operation (3,2,(a,b)=>{
+//    console.log (a+b)
+//})
 
-operation (1,2,(a,b)=>{
-    console.log (a+b)
-})
+operation (3,2,opTest)
